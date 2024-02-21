@@ -29,6 +29,7 @@ module.exports = {
         one: ["4.2356rem", "1"],
         large: ["2.6181rem", "2.8799rem"],
         med: ["1.6175rem", "2.0704rem"],
+        small18: ["1.125rem", "1.5rem"],
         small: ["1rem", "1.5rem"],
         xsmall: ["0.6181rem", "0.883rem"],
       },
