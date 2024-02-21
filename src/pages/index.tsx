@@ -6,6 +6,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
       <Navbar />
+      <Hero />
     </main>
   );
 };

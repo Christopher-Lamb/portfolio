@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 :root {
   --five: 1215.98px;
   --four: 751.53px;
@@ -14,4 +16,25 @@
   --xsm: 25.88px;
   --xsm2: 16px;
   --xsm3: 9.89px;
+  --primary: #021024;
+  --primary-lighter: #003153;
+  --secondary: #5483b3;
+  --secondary-lighter: #7da0ca;
+  --accent: #c1e8ff;
+  --white-text: rgba(255, 255, 255, 0.9);
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../assets/background-panel (5).png");
+  background-repeat: repeat;
+}
+
+.archivo {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

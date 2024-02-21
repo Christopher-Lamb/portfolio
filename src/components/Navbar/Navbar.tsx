@@ -7,16 +7,24 @@ const style = {
 
 const Navbar: React.FC = () => {
   return (
-    <div className="bg-gray-700 h-[var(--md)]" style={style}>
+    <div className="h-med" style={style}>
       <div className="flex items-center justify-center ">
-        <div className='text-3xl text-white'>Logo</div>
+        <div className="text-3xl text-white">Logo</div>
       </div>
-      <nav>
-        <ul className="flex text-white h-[var(--md)] text-xl items-center justify-center gap-[var(--xsm2)]">
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>About</li>
-          <li>Contact</li>
+      <nav aria-label="Main navigation">
+        <ul className="flex font-semibold text-accent h-med text-xl items-center justify-center gap-2xsmall">
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
