@@ -5,7 +5,6 @@ import { Technologies } from "..";
 import ReactIcon from "./ReactIcon.svg";
 import "./Hero.css";
 
-
 const Hero: React.FC = () => {
   return (
     <div className="relative min-h-four flex pt-large sm:pt-0 pb-0 sm:pb-med sm:items-center ">
@@ -23,8 +22,8 @@ const Hero: React.FC = () => {
 const TextCard: React.FC = () => {
   return (
     <div>
-      <div className="relative top-[-4rem] sm:top-[-6.5rem] left-[calc(100%-12rem)] sm:left-[calc(100%-20rem)]">
-        <img src={ReactIcon} className="absolute w-one h-one sm:w-two sm:h-two opacity-50" />
+      <div aria-hidden className="relative top-[-4rem] sm:top-[-6.5rem] left-[calc(100%-12rem)] sm:left-[calc(100%-20rem)]">
+        <img src={ReactIcon} className="absolute select-none w-one h-one sm:w-two sm:h-two opacity-50" />
       </div>
       <h1 className="relative z-1 text-secondary archivo text-med md:text-large">
         I'm Chris,

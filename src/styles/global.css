@@ -24,8 +24,9 @@
   --white-text: rgba(255, 255, 255, 0.9);
 }
 
-html{
+html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {

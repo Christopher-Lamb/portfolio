@@ -1,0 +1,11 @@
+.about-small-square {
+  transform: translateX(25.88px) translateY(41.89px);
+}
+.about-medium-square {
+  transform: translateX(-25.88px) translateY(-41.89px);
+}
+
+.transition-speed {
+  transition: 500ms cubic-bezier(1, 0, 0.38, 1.06);
+  /* transition: 500ms cubic-bezier(1, 0.45, 1, 1); */
+}

@@ -9,21 +9,18 @@ const Navbar: React.FC = () => {
   return (
     <div className="h-med" style={style}>
       <div className="flex items-center justify-center ">
-        <div className="text-3xl text-white">Logo</div>
+        <div aria-hidden className="text-3xl text-white"></div>
       </div>
       <nav aria-label="Main navigation">
         <ul className="flex font-semibold text-accent h-med text-xl items-center justify-center gap-2xsmall">
           <li>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#skills">Skills</a>
-          </li>
+          </li> */}
           <li>
             <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

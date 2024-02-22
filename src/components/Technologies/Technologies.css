@@ -2,9 +2,16 @@
   transform: rotate3d(0.5, -0.866, 0, 15deg) rotate(1deg);
   transition: transform 0.4s ease;
   border-radius: 0.5em;
+  /* box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.327); */
   animation: svgShake 14s ease-in-out var(--delay) infinite both;
 }
 
+.radial-color {
+  background: rgba(86, 132, 179, 0.1);
+  /* background: rgb(4, 12, 31); */
+  /* background-image: radial-gradient(circle, rgba(86, 132, 179, 0.555), rgb(2, 15, 34)); */
+  border-radius: 200%;
+}
 
 @keyframes svgShake {
   0%,

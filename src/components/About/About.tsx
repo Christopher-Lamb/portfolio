@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PLACEHOLDER from "../../assets/placeholder.jpg";
+import { throttle } from "lodash";
+import "./About.css";
 
 const AboutComponent: React.FC = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = throttle(() => {
+      const shouldAnimate = window.scrollY > 250; // Arbitrary scroll position
+      setAnimate(shouldAnimate);
+    }, 200); // Adjust the throttle duration as needed
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      handleScroll.cancel(); // Cancel any trailing invocation of the throttle function
+    };
+  }, []);
   return (
-    <section className="bg-secondary overflow-hidden min-h-three">
+    <section id="about" className="bg-secondary overflow-hidden min-h-three">
       <div className="max-w-five grid gap-2xsmall md:gap-0 md:grid-cols-2 mx-auto min-h-three py-small md:py-0">
         {/* Image with squares */}
         <div className="relative w-full overflow-hidden flex justify-center items-center py-small">
           <div className="relative">
-            <div className="absolute bg-secondary-lighter w-one h-one rounded top-[-41.89px] left-[-25.88px]"></div>
-            <div className="absolute bg-accent w-large h-large rounded top-[219.31px] left-[203.3px]"></div>
+            <div className={(animate ? "about-medium-square" : "") + " absolute bg-secondary-lighter duration-100 w-one h-one rounded top-0 left-0 left-[-25.88px] transition-speed"}></div>
+            <div className={(animate ? "about-small-square" : "") + " absolute bg-accent w-large h-large rounded top-one left-one transition-speed"}></div>
             <img src={PLACEHOLDER} className="relative z-1 w-two h-auto object-contain rounded" />
           </div>
         </div>
