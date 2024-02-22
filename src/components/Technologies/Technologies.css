@@ -1,0 +1,27 @@
+.svg-3d {
+  transform: rotate3d(0.5, -0.866, 0, 15deg) rotate(1deg);
+  transition: transform 0.4s ease;
+  border-radius: 0.5em;
+  animation: svgShake 14s ease-in-out var(--delay) infinite both;
+}
+
+
+@keyframes svgShake {
+  0%,
+  100% {
+    transform: rotate3d(0.1, 0.1, 0, 1deg) rotate(1deg);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate3d(0.1, -0.1, 0, -1deg) rotate(-1deg);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate3d(0.1, 0.1, 0, 1deg) rotate(1deg);
+  }
+}

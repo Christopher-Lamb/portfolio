@@ -1,15 +1,20 @@
 import React from "react";
 import PLACEHOLDER from "../assets/placeholder.jpg";
 import { FaGithub, FaReact } from "react-icons/fa";
+import { Technologies } from "..";
 import ReactIcon from "./ReactIcon.svg";
 import "./Hero.css";
 
+
 const Hero: React.FC = () => {
   return (
-    <div className="relative h-four flex items-center">
-      <div className="max-w-four w-full mx-auto">
+    <div className="relative min-h-four flex pt-large sm:pt-0 pb-0 sm:pb-med sm:items-center ">
+      <div className="max-w-four w-full mx-auto px-2xsmall md:px-0">
         <TextCard />
         {/* <ImageCard /> */}
+      </div>
+      <div className="absolute w-full borders bottom-one sm:bottom-med">
+        <Technologies />
       </div>
     </div>
   );
