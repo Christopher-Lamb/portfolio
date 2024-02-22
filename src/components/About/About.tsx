@@ -4,9 +4,9 @@ import PLACEHOLDER from "../../assets/placeholder.jpg";
 const AboutComponent: React.FC = () => {
   return (
     <section className="bg-secondary overflow-hidden min-h-three">
-      <div className="max-w-five grid gap-2xsmall md:gap-0 md:grid-cols-2 mx-auto min-h-three py-xsmall md:py-0">
+      <div className="max-w-five grid gap-2xsmall md:gap-0 md:grid-cols-2 mx-auto min-h-three py-small md:py-0">
         {/* Image with squares */}
-        <div className="relative w-full overflow-hidden flex justify-center items-center py-[41.89px]">
+        <div className="relative w-full overflow-hidden flex justify-center items-center py-small">
           <div className="relative">
             <div className="absolute bg-secondary-lighter w-one h-one rounded top-[-41.89px] left-[-25.88px]"></div>
             <div className="absolute bg-accent w-large h-large rounded top-[219.31px] left-[203.3px]"></div>

@@ -1,0 +1,23 @@
+.trapezoid {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 60px solid var(--secondary-lighter);
+  border-left: var(--three) solid var(--secondary-lighter);
+  border-right: 0px solid transparent;
+  left: 0;
+  bottom: 0;
+}
+
+.project-item {
+  box-shadow: var(--xsm3) var(--xsm3) 0 var(--primary-lighter);
+}
+
+.project-item:hover .trapezoid,
+.project-item:hover h4 {
+  opacity: 1;
+}
+
+@media (min-width: 640px) {
+}
