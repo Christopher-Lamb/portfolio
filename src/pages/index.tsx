@@ -8,15 +8,15 @@ const IndexPage: React.FC<PageProps> = () => {
     <main>
       <Navbar />
       <Hero />
-      <About />
+      <About/>
       <section id="projects" className="max-w-five mx-auto py-large">
         <h3 className="text-large text-accent archivo px-xsmall mb-xsmall">Projects</h3>
         <ProjectItemArray array={projectsArr} />
       </section>
       {/* Footer */}
-      <div className="h-large bg-secondary w-full relative">
+      {/* <div className="h-large bg-secondary w-full relative">
         <div className="absolute h-2xsmall bg-accent w-full"></div>
-      </div>
+      </div> */}
     </main>
   );
 };

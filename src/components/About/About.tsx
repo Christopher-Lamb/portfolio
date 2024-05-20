@@ -20,7 +20,7 @@ const AboutComponent: React.FC = () => {
     };
   }, []);
   return (
-    <section id="about" className="bg-secondary overflow-hidden min-h-three">
+    <section id="about" className="bg-secondary my-large overflow-hidden min-h-three">
       <div className="max-w-five grid gap-2xsmall md:gap-0 md:grid-cols-2 mx-auto min-h-three py-small md:py-0">
         {/* Image with squares */}
         <div className="relative w-full overflow-hidden flex justify-center items-center py-small">

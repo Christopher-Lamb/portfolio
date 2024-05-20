@@ -4,10 +4,11 @@
   height: 0;
   border-top: 30px solid transparent;
   border-bottom: 60px solid var(--secondary-lighter);
-  border-left: var(--three) solid var(--secondary-lighter);
+  border-left: var(--two) solid var(--secondary-lighter);
   border-right: 0px solid transparent;
   left: 0;
   bottom: 0;
+  opacity: 1;
 }
 
 .project-item {
@@ -17,11 +18,23 @@
 .circle {
   border-radius: 200%;
 }
-
+/* 
 .project-item:hover .trapezoid,
-.project-item:hover h4 {
+.project-item:hover span {
   opacity: 1;
-}
+} */
 
 @media (min-width: 640px) {
+  .trapezoid {
+    border-left: var(--three) solid var(--secondary-lighter);
+  }
+  .trapezoid,
+  .project-item span {
+    opacity: 0.5;
+  }
+
+  .project-item:hover .trapezoid,
+  .project-item:hover span {
+    opacity: 1;
+  }
 }
