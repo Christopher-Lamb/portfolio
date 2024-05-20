@@ -30,8 +30,16 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   background-image: url("../assets/background-panel (5).png");
-  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Allows the image to move with the scroll */
+  background-position: center; /* Centers the image */
+  background-repeat: repeat; /* Prevents the image from repeating */
+
+  /* background-image: url("../assets/background-panel (5).png");
+  background-repeat: repeat; */
 }
 
 .archivo {

@@ -1,18 +1,28 @@
 import React from "react";
 import "./ProjectItem.css";
+import Image from "../Image";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectItemProps {
-  src: string;
+  filename: string;
   alt: string;
   tag: string;
   href: string;
+  className?: string;
+  github: string;
+  top?: string;
 }
 
-const ProjectItem: React.FC<ProjectItemProps> = ({ src, alt, tag, href }) => {
+const ProjectItem: React.FC<ProjectItemProps> = ({ filename, alt, tag, href, className, github, top }) => {
   return (
-    <a href={href} aria-label="project box">
-      <div className="relative project-item w-two h-one sm:h-two sm:w-three shrink-0 bg-accent overflow-hidden">
-        <img src={src} alt={alt} className="object-contain" />
+    <a href={href} target="_blank" aria-label="project box">
+      <div className="relative project-item w-two h-one sm:h-two sm:w-three shrink-0 bg-accent ">
+        <a href={github} target="_blank" className="absolute hover:scale-110 transition circle bg-white mr-2xsmall mb-2xsmall z-[9999] bottom-0 right-0">
+          <FaGithub className="" size={"4rem"} color="#000" />
+        </a>
+        <div className="overflow-hidden h-one sm:h-two relative">
+          <Image filename={filename} alt={alt} className={`object-contains absolute ${className}`} style={{ top }} />
+        </div>
         <div className="trapezoid opacity-50"></div>
         <h4 className="absolute opacity-50 bottom-0 pb-2xsmall pl-2xsmall text-med text-white archivo">{tag}</h4>
       </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import PLACEHOLDER from "../assets/placeholder.jpg";
-import { FaGithub, FaReact } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { Technologies } from "..";
 import ReactIcon from "./ReactIcon.svg";
 import "./Hero.css";
+import { Link } from "gatsby";
 
 const Hero: React.FC = () => {
   return (
@@ -33,7 +33,9 @@ const TextCard: React.FC = () => {
         I excel in creativity, code reusability, and efficiency. My projects prioritize cleanliness, user-friendliness, and clarity in design and functionality.
       </p>
       {/* <h2 className="text-white-text)]" style={{ fontSize: "var(--xsm)" }}>Developer | Innovator | Problem-Solver</h2> */}
-      <FaGithub className="fill-white w-xsmall h-xsmall mt-3xsmall" />
+      <Link to="https://github.com/Christopher-Lamb/">
+        <FaGithub className="fill-white w-xsmall h-xsmall mt-3xsmall" />
+      </Link>
     </div>
   );
 };
