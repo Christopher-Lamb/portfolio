@@ -12,6 +12,7 @@
     "start": "gatsby develop -p 3000",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public",
     "clean": "gatsby clean",
     "test": "jest",
     "typecheck": "tsc --noEmit"
@@ -25,6 +26,7 @@
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
+    "gh-pages": "^6.1.1",
     "lodash": "^4.17.21",
     "postcss": "^8.4.35",
     "react": "^18.2.0",

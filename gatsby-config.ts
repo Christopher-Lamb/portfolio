@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/portfolio",
   siteMetadata: {
     title: `My Portfolio`,
     siteUrl: `https://www.yourdomain.tld`,
@@ -31,7 +32,24 @@ const config: GatsbyConfig = {
         background_color: `#f7f7f7`,
         theme_color: `#3f51b5`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // The path to your icon file
+        icon: `src/images/favicon.png`, // The path to your icon file
+        icons: [
+          {
+            src: `${__dirname}/src/images/favicon.png`,
+            sizes: `64x64 32x32 24x24 16x16`,
+            type: `image/png`,
+          },
+          {
+            src: `${__dirname}/src/images/192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `${__dirname}/src/images/512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
       },
     },
   ],
